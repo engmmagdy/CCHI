@@ -103,18 +103,6 @@
   padding-right: 0;
 }
 
-@media (min-width: 319px) and (max-width: 767px) {
-  .nav-bar .main-menu ul[id*=RootAspMenu] {
-    background: #f5f5f5;
-  }
-}
-
-@media (min-width: 767px) and (max-width: 991px) {
-  .nav-bar .main-menu ul[id*=RootAspMenu] {
-    background: #f5f5f5;
-  }
-}
-
 .nav-bar .main-menu ul[id*=RootAspMenu] > li.static {
   display: inline-block;
   text-align: center;
@@ -142,51 +130,21 @@
   padding-left: 0;
 }
 
-.nav-bar .main-menu ul[id*=RootAspMenu] > li.static::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 4px;
-  background: #efa22c;
-  -webkit-transition: width .5s;
-  transition: width .5s;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
-  text-align: center;
-}
-
-@media (min-width: 319px) and (max-width: 767px) {
-  .nav-bar .main-menu ul[id*=RootAspMenu] > li.static::after {
-    display: none;
-  }
-}
-
-@media (min-width: 767px) and (max-width: 991px) {
-  .nav-bar .main-menu ul[id*=RootAspMenu] > li.static::after {
-    display: none;
-  }
-}
-
-.nav-bar .main-menu ul[id*=RootAspMenu] > li.static:hover::after {
-  width: 100%;
-}
-
 .nav-bar .main-menu ul[id*=RootAspMenu] > li.static:hover ul.dynamic {
   display: block;
 }
 
 .nav-bar .main-menu ul[id*=RootAspMenu] > li.static:hover > a {
-  color: #006fb6 !important;
+  color: #d1a74a !important;
 }
 
 .nav-bar .main-menu ul[id*=RootAspMenu] > li.static > a.selected {
-  color: #92732b !important;
-  border-bottom: 4px solid #cfb264;
+  color: #d1a74a !important;
+  background-color: transparent;
 }
 
 .nav-bar .main-menu ul[id*=RootAspMenu] > li.static a {
-  color: #3c3c3c;
+  color: #fff;
   margin-left: 0px !important;
   outline: 0;
   padding-right: 10px;
@@ -209,6 +167,37 @@
 .nav-bar .main-menu ul[id*=RootAspMenu] > li.static a span.additional-background {
   background-image: none;
   padding-left: 0;
+}
+
+.nav-bar .main-menu ul[id*=RootAspMenu] > li.static ul.dynamic {
+  right: 0;
+  left: initial !important;
+  width: 100%;
+  min-width: 100%;
+  float: right;
+  border: 0;
+  background: #92732b;
+  margin-top: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.nav-bar .main-menu ul[id*=RootAspMenu] > li.static ul.dynamic li {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.nav-bar .main-menu ul[id*=RootAspMenu] > li.static ul.dynamic li a {
+  color: #fff;
+  font-size: 11pt;
 }
 
 .nav-bar .navbar-toggle {
