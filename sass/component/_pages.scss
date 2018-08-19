@@ -1,0 +1,49 @@
+/*-------------- Start Vertical Menu ----------------*/
+
+.v-menu
+{
+	h4
+	{
+		font-size: $fontsize - 1;
+	}
+}
+
+.page-content
+{
+	p
+	{
+		font-size: $fontsize - 2;
+	}
+}
+/*-------------- End  Vertical  Menu ----------------*/
+
+.breadcrumb
+{
+	font-size: $fontsize - 3;
+		.breadcrumb-item
+		{
+			a
+			{
+				margin-#{$left}:0;
+				margin-#{$right}: 15px
+			}
+			span{margin-#{$right}: 15px}
+			
+		}
+}
+
+
+
+
+.page-header
+{
+	h1
+	{
+		@include linearGradient(#d1a74b, #92742c);
+		font-size: $fontsize;
+		border-#{$right}: 5px solid #d1a74b;
+		border-#{$left}: 0;
+		
+	}
+}
+

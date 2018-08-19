@@ -1,0 +1,143 @@
+/*------------------start main navbar ----------------*/
+
+.navbar-toggler {
+	border: 0;
+	&:focus {
+		outline: none
+	}
+}
+
+.nav-bg {
+	background-color: $firstcolor;
+}
+
+/*Start Bootstrap*/
+
+.nav-item a {
+	color: #fff !important;
+	font-size: $fontsize - 3;
+	&:hover {
+		color: $secondcolor !important
+	}
+}
+
+.dropdown-divider {
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-menu {
+	border-radius: 0;
+	border: 0;
+	background: transparent;
+	margin-top: 2px;
+	width: auto;
+	@media(max-width: 991px) {
+		width: 100%
+	}
+	a {
+		background: $firstcolor;
+		padding: 10px;
+		&:hover {
+			background: $secondcolor;
+			color: $firstcolor !important;
+		}
+	}
+	.dropdown-divider {
+		margin: 0
+	}
+}
+
+.dropdown-toggle::after {
+	margin-top: 8px;
+	float: $right
+}
+
+.fa-mnu {
+	font-size: $fontsize + 5
+}
+
+/*End Bootstrap*/
+
+/*-------- Start Search --------*/
+
+.search-nav {
+	right: 0 !important
+}
+
+.main-nav {
+	@media(max-width: 991px) {
+		width: 100%
+	}
+}
+
+.search {
+	background: transparent;
+	border: 0;
+	border-radius: 0;
+	height: 50px;
+	position: relative;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.48);
+	font-size: $fontsize + 5;
+	box-shadow: 0 0 0;
+	margin: 15px 0;
+	width: 90%;
+}
+
+.search-icon {
+	position: absolute;
+	width: 40px;
+	right: 35px;
+	bottom: 10px;
+	font-size: $fontsize + 10;
+	@media(max-width: 768px) {
+		font-size: $fontsize + 10
+	}
+}
+
+.search-icon-ar {
+	position: absolute;
+	left: 35px;
+	bottom: 10px;
+	font-size: $fontsize + 10;
+	@media(max-width: 768px) {
+		font-size: $fontsize + 10
+	}
+}
+
+.search-options {
+	display: inline;
+	margin: 0 10px;
+}
+
+.search-links {
+	list-style-type: none;
+	margin-#{$left}: 0;
+	padding-#{$left}: 0;
+	li {
+		line-height: 160% !important;
+		margin: 15px 0 !important;
+		a {
+			font-size: $fontsize + 1;
+			color: #92742C;
+			margin: 10px 0 !important;
+		}
+	}
+}
+
+input[type="search"].search::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0.6);
+	@media(max-width: 768px) {
+		font-size: $fontsize - 2 !important;
+	}
+}
+
+input:focus[type="search"].search::-webkit-input-placeholder {
+	color: rgba(70, 70, 70, 0.5) !important;
+	outline: 0;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+/*-------- End Search --------*/
+
+/*------------------End main navbar -----------------*/

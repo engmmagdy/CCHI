@@ -1,0 +1,25 @@
+{
+    "name": "pnu-fm",
+    "version": "1.0.0",
+    "description": "Princess Nourah University Faculty Members",
+    "main": "gulpfile.js",
+    "dependencies": {
+        "@material/select": "^0.24.0",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^4.0.0",
+        "gulp-cssmin": "^0.2.0",
+        "gulp-sass": "^3.1.0",
+        "gulp-sourcemaps": "^2.6.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://mmagdy87@bitbucket.org/mmagdy87/pnu-fm.git"
+    },
+    "author": "Mohammed Magdy",
+    "license": "ISC",
+    "homepage": "https://bitbucket.org/mmagdy87/pnu-fm#readme"
+}

@@ -1,0 +1,13 @@
+.e-services {
+	a {
+		border: 1px solid $thirdcolor;
+		text-align: center;
+		padding: 30px 15px;
+		font-size: $fontsize - 3;
+		display: block;
+		&:hover {
+			background: #FBFBFB;
+			border: 1px solid $secondcolor;
+		}
+	}
+}

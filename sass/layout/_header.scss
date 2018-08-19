@@ -1,0 +1,161 @@
+header {
+	background: no-repeat url(../../images/cchi-bg.png) center top;
+	padding: 10px;
+	.top-links {
+		list-style-type: none;
+		font-family: $enfont;
+		width: auto;
+		font-weight: 600;
+		li {
+			float: $left;
+			font-size: $fontsize - 5;
+			padding: 5px 10px;
+			border-#{$right}: 1px solid #ccc;
+		}
+		@media(max-width:425px) {
+			li {
+				padding: 5px 6px;
+				font-size: $fontsize - 6;
+			}
+			.top-links {
+				width: 100%;
+			}
+		}
+		@media(max-width:319px) {
+			li {
+				/*border-#{$left}: 0;width: 100%;*/
+				padding: 5px 3px;
+				font-size: $fontsize - 7;
+			}
+		}
+		li:first-child {
+			border-#{$right}: 0
+		}
+	}
+}
+
+.kyr-num {
+	margin-#{$right}: -30px !important;
+	background-color: $thirdcolor;
+	font-family: $enfont;
+	margin-#{$left}: 5px !important
+}
+
+/*------- End Reset---------*/
+
+/*------------- Start Header --------------*/
+
+header {
+	.top-links {
+		font-family: $font-family;
+		font-weight: 800;
+		li {
+			float: $left;
+			border-#{$left}: 1px solid #ccc;
+			border-#{$right}: 0;
+			&:first-child {
+				border-#{$left}: 0
+			}
+		}
+	}
+}
+
+/*------------- End Header ----------------*/
+
+/*------------------start main navbar ----------------*/
+
+/*Start Bootstrap*/
+
+.modal-header .close {
+	padding: 1rem;
+	margin: -1rem auto -1rem -1rem;
+	font-size: $fontsize + 20;
+	color: #fff;
+	&:focus {
+		outline: none
+	}
+}
+
+.dropdown-toggle::after {
+	float: $right
+}
+
+/*-------- Start Search --------*/
+
+.search-nav-ar {
+	left: 0 !important
+}
+
+.search-icon {
+	left: 35px;
+}
+
+.search-icon-ar {
+	right: 35px;
+}
+
+.search-links {
+	margin-#{$right}: 0;
+	padding-#{$right}: 0;
+}
+
+/*-------- End Search --------*/
+
+/*------------------End main navbar -----------------*/
+
+/*-------------------------- Start Home Page ----------------------*/
+
+/*-------------------------- Start Banner Slider ---------------------------*/
+
+/*-------------------- End Directions ---------------*/
+
+.slider2 {
+	h2 {
+		text-align: $right
+	}
+	p {
+		text-align: $right
+	}
+	ul {
+		padding-#{$left}: 20px;
+		text-align: $right;
+		li {
+			text-align: $right
+		}
+	}
+	ol {
+		padding-#{$left}: 10px;
+		text-align: $right;
+		li {
+			color: $firstcolor;
+			text-align: $right;
+			span {
+				font-family: $font-family
+			}
+		}
+	}
+}
+
+/*-------------------------- End Banner Slider ----------------------------*/
+
+/*-------------------Start Footer Links --------------------------------------*/
+
+.flinks {
+	h2 {
+		margin-#{$left}: 5px;
+		margin-#{$right}: 5px;
+	}
+}
+
+.shortlinks {
+	border-#{$left}: 1px solid #DDDDDD;
+	border-#{$right}: 0;
+	height: 70px;
+	img {
+		float: $left;
+	}
+}
+
+/*------------------- End Footer Links --------------------------------------*/
+
+/*-------------------------- End Home Page ----------------------*/

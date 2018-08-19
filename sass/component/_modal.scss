@@ -1,0 +1,72 @@
+/*Start Bootstrap*/
+
+/*--------------------Start Modal--------------------*/
+
+.modal {
+    background: $modalbg;
+}
+
+.modal-content {
+    background: transparent;
+    @include box-shadow( 0 0 0 0);
+    border: 0;
+}
+
+.modal-dialog {
+    max-width: $mainwidth;
+}
+
+.modal-data-content {
+    margin: 50px 0;
+}
+
+.modal-header .close {
+    padding: 1rem;
+    margin: -1rem -1rem -1rem auto;
+    font-size: $fontsize + 20;
+    color: #fff;
+    &:focus {
+        outline: none
+    }
+}
+
+.menu-modal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+        line-height: 250%;
+        a {
+            padding: 10px;
+            display: block;
+            margin: 1px 0;
+            color: #412e06;
+            &:hover {
+                background: #ac986b;
+                color: #fff
+            }
+        }
+    }
+}
+
+.m-link {
+    background: #74684F;
+    display: block;
+    padding: 100px 20px;
+    font-size: 150%;
+    text-align: center;
+    color: #fff;
+    &:hover {
+        background: #9E8E6D;
+    }
+}
+
+/*--------------------End   Modal--------------------*/
+
+@media screen and (min-width: 1600px) {
+    .container {
+        max-width: 1570px
+    }
+}
+
+/*End Bootstrap*/

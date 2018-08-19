@@ -1,0 +1,71 @@
+/* =================================== */
+
+/*  Basic Style 
+/* =================================== */
+
+::-moz-selection {
+	/* Code for Firefox */
+	background: $secondcolor;
+	color: #fff
+}
+
+::selection {
+	background: $secondcolor;
+	color: #fff
+}
+
+body {
+	background-color: #fff;
+	font-size: $fontsize;
+	font-family: $enfont;
+}
+
+a {
+	color: $firstcolor;
+	@include transition(all .5s ease 0s);
+}
+
+a:hover {
+	color: $secondcolor;
+	text-decoration: none;
+}
+
+a:focus {
+	outline: none
+}
+
+/*General Classes*/
+
+.enfont {
+	font-family: $enfont;
+}
+
+.arfont {
+	font-family: $font-family;
+}
+
+.full-width {
+	width: 100% !important
+}
+
+.bg-brown {
+	background-color: $secondcolor !important;
+}
+
+.kyr-num {
+	margin-#{$left}: -30px !important;
+	background-color: $thirdcolor
+}
+
+.alert-primary {
+	background-color: $thirdcolor;
+	border: 0;
+	color: $firstcolor;
+	a {
+		color: #000
+	}
+}
+
+.black-transparent-bg {
+	background: rgba(41, 30, 16, 0.5) !important
+}

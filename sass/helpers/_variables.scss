@@ -1,0 +1,60 @@
+/*Start General Theme Color*/
+
+//-------------------- Base Colors --------------------//
+$firstcolor: #92732b;
+$secondcolor: #d1a74a;
+$thirdcolor: #e9e7de;
+$fourthcolor: #5d4409;
+//-------------------- Main Fonts --------------------//
+$fontsize: 14pt;
+$font-family: 'GE Flow';
+$enfont: 'Roboto';
+//-------------------- Theme Colors -----------------//
+$success: #3C763D;
+$success-hover: #2a532b;
+$info: #c6bb7b;
+$info-hover: #9c9464;
+$warning: #f4a51d;
+$warning-hover: #d3901b;
+$danger: #A94442;
+$danger-hover: #923634;
+$modalbg: #D7D0C1;
+$footerbg: #d0cbc1;
+$shortlinksbg: #f5f2ec;
+$copyrightbg: #74684f;
+$intpagebg: #fbfbfb;
+/*-------------------- Directions -----------------*/
+
+$right: right;
+$left: left;
+$rtl: rtl;
+$ltr: ltr;
+/*--------------------    Width    -----------------*/
+
+$mainwidth: 100%;
+/*End General Theme Color*/
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+// Extra small screen / phone
+$screen-xs : 320px !default;
+$screen-islg : 1024px !default;
+$screen-isHlg : 768px !default;
+$screen-xlg : 1900px !default;
+// Small screen / tablet
+$screen-sm : 768px !default;
+// Medium screen / desktop
+$screen-md : 992px !default;
+// Large screen / desktop
+$screen-lg : 1200px !default;
+// Large screen / wide 
+$screen-wd: 1600px !default;
+/********************************************/
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width : 30 !default;
+/********************************************/

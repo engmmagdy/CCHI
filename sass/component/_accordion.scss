@@ -1,0 +1,29 @@
+/* Scss Document */
+#accordion
+{    
+	.card
+	{
+		border-radius: 0;margin-bottom: 10px;
+		a.card-header
+			{
+				background: $secondcolor;
+				color: #fff;
+				text-align: $left;
+				border-radius: 0;
+				padding: 5px 5px 0 5px;
+				margin: 0;
+				&:hover,&:focus
+				{
+					text-decoration: none
+				}	
+			}
+		h5
+		{
+			font-size: $fontsize - 2  
+		}
+		.card-body
+		{
+			font-size: $fontsize - 4
+		}
+	}
+}

@@ -1,0 +1,373 @@
+/*-------------------------- Start Banner Slider ---------------------------*/
+
+/*-------------------- End Directions ---------------*/
+
+.slider1 {
+	h2 {
+		color: $firstcolor
+	}
+	p {
+		color: $fourthcolor
+	}
+}
+
+.slider2 {
+	display: flex;
+	.s2-text {
+		margin-top: 30px
+	}
+	h2 {
+		font-size: $fontsize + 2;
+		text-align: $right;
+		@media(max-width: 992px) {
+			font-size: $fontsize - 5
+		}
+	}
+	p {
+		font-size: $fontsize - 3;
+		color: $firstcolor;
+		text-align: $right
+	}
+	.vision {
+		color: #a94442;
+	}
+	.mission {
+		color: #8a6d3b
+	}
+	.target {
+		color: #3c763d
+	}
+	ul {
+		list-style: circle;
+		padding-#{$left}: 20px;
+		padding-#{$right}: 0;
+		font-size: $fontsize - 3;
+		line-height: 150%;
+		text-align: $right;
+		li {
+			color: $firstcolor;
+			text-align: $right;
+			list-style-type: circle;
+		}
+	}
+	ol {
+		padding-#{$left}: 10px;
+		font-size: $fontsize - 3;
+		font-family: $enfont;
+		line-height: 150%;
+		text-align: $right;
+		li {
+			color: $firstcolor;
+			text-align: $right;
+			span {
+				font-family: $enfont
+			}
+		}
+	}
+}
+
+.slide3 {
+	margin: 60px 0;
+	text-align: center;
+	img {
+		width: 120px;
+		margin: auto
+	}
+	h4 {
+		padding: 0;
+		font-size: $fontsize - 2;
+		margin: 5px 0;
+		@media(max-width: 992px) {
+			font-size: $fontsize - 4
+		}
+	}
+	h3 {
+		margin: 5px 0;
+		padding: 0;
+		font-family: $enfont;
+		font-size: $fontsize - 2;
+		@media(max-width: 992px) {
+			font-size: $fontsize - 5
+		}
+	}
+}
+
+/*-------------------------- End Banner Slider ----------------------------*/
+
+/*------------------- Start E-Services Classes ------------------------------*/
+
+.links-w {
+	width: $mainwidth / 5;
+	@media(max-width: 767px) {
+		width:$mainwidth / 1;
+	}
+	@media(min-width:768px) {
+		width: $mainwidth / 2;
+	}
+	@media(min-width:992px) {
+		width: $mainwidth / 3;
+	}
+	@media(min-width:1200px) {
+		width: $mainwidth /5;
+	}
+}
+
+.links-w a {
+	height: 70px !important;
+}
+
+.links-w:nth-last-child(1),
+.links-w:nth-last-child(2) {
+	@media(min-width: 992px) {
+		width:$mainwidth / 2;
+	}
+	@media(min-width:1200px) {
+		width: $mainwidth /5;
+	}
+}
+
+.links-w:nth-last-child(1),
+.links-w:nth-last-child(5) {
+	@media(max-width: 767px) {
+		width:$mainwidth / 1;
+	}
+	@media(min-width:768px) {
+		width: $mainwidth / 1;
+	}
+	@media(min-width:992px) {
+		width: $mainwidth / 2;
+	}
+	@media(min-width:1200px) {
+		width: $mainwidth /5;
+	}
+}
+
+.eserv-links {
+	color: #fff;
+	display: flex;
+	padding: 0;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	font-size: $fontsize - 2;
+	.color1 {
+		@extend .eserv-links;
+		background: #5c5c34;
+		&:hover {
+			background: #8C8C50;
+		}
+	}
+	.color2 {
+		@extend .eserv-links;
+		background: #5d4409;
+		&:hover {
+			background: #84610D;
+		}
+	}
+	.color3 {
+		@extend .eserv-links;
+		background: #74684f;
+		&:hover {
+			background: #9C8C6B;
+		}
+	}
+	.color4 {
+		@extend .eserv-links;
+		background: #d2a749;
+		&:hover {
+			background: #F9C656;
+		}
+	}
+	.color5 {
+		@extend .eserv-links;
+		background: #ccbea3;
+		&:hover {
+			background: #E9DABC;
+		}
+	}
+}
+
+/*------------------- End E-Services Classes ------------------------------*/
+
+/*------------------- Start HomePage Blocks ---------------------------------*/
+
+/*-------------------------- Start CCHI News ------------------------------*/
+
+/*en*/
+
+#cchi-news {
+	display: block;
+	margin: auto
+}
+
+#cchi-news a {
+	overflow: hidden !important;
+	position: relative !important;
+	display: block
+}
+
+#cchi-news img {
+	height: 333px;
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+#cchi-news span {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.6);
+	color: #eeeeee;
+	font-size: 17px;
+	bottom: 0;
+	width: 100%;
+	padding: 15px;
+}
+
+/*ar*/
+
+#cchi-news-ar {
+	display: block;
+	margin: auto
+}
+
+#cchi-news-ar a {
+	overflow: hidden !important;
+	position: relative !important;
+	display: block
+}
+
+#cchi-news-ar img {
+	height: 333px;
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+#cchi-news-ar span {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.6);
+	color: #eeeeee;
+	font-size: 17px;
+	bottom: 0;
+	width: 100%;
+	padding: 15px;
+}
+
+/*-------------------------- End CCHI News   ------------------------------*/
+
+.hp-block {
+	@include box-shadow( 0px 0px 8px 0px rgba(0, 0, 0, 0.2));
+	background: #f9f9f9;
+	height: 410px;
+	@media(min-width: 768px) {
+		margin: 15px 0 !important
+	}
+	@media(max-width:767px) {
+		height: auto;
+		margin: 15px 0 !important
+	}
+	h2 {
+		background: $secondcolor;
+		font-size: $fontsize - 1;
+		padding: 10px;
+		color: #fff
+	}
+	.hp-block-body {
+		padding: 8px;
+		.insureds {
+			background: $thirdcolor;
+			margin: 5px 0;
+			width: 100%;
+			height: 75px;
+			h2 {
+				color: $firstcolor;
+				font-size: $fontsize - 3.5;
+				background: transparent;
+				text-align: center;
+				margin: 0;
+			}
+			h3 {
+				color: #000;
+				font-size: $fontsize + 3;
+				text-align: center;
+				font-family: $enfont;
+				font-weight: 300;
+				margin: 0;
+			}
+		}
+		.visitors-insure {
+			background: $thirdcolor;
+			padding: 5px;
+			margin: 5px 0 !important;
+			width: 100%;
+			height: 75px;
+			h2 {
+				color: $firstcolor;
+				font-size: $fontsize - 3;
+				background: transparent;
+				text-align: center;
+				margin: 0;
+			}
+			h3 {
+				color: #000;
+				font-size: $fontsize + 4;
+				text-align: center;
+				font-family: $enfont;
+				font-weight: 300;
+			}
+		}
+	}
+}
+
+/*------------------- End HomePage Blocks ---------------------------------*/
+
+/*-------------------Start Footer Links --------------------------------------*/
+
+.flinks {
+	@include border-radius(6px);
+	color: #fff;
+	display: flex;
+	padding: 10px;
+	width: 100%;
+	align-items: center;
+	h2 {
+		font-size: $fontsize;
+		display: inline-block;
+		text-align: center;
+		margin-#{$left}: 5px
+	}
+	.color1 {
+		@extend .flinks;
+		background: #9adaec;
+		&:hover {
+			background: #79BBCD;
+		}
+	}
+	.color2 {
+		@extend .flinks;
+		background: #e7eb9d;
+		&:hover {
+			background: #C6CB78;
+		}
+	}
+	.color3 {
+		@extend .flinks;
+		background: #eb9e9d;
+		&:hover {
+			background: #C37A7A;
+		}
+	}
+	.color4 {
+		@extend .flinks;
+		background: #a4dad4;
+		&:hover {
+			background: #81B5B0;
+		}
+	}
+}
+
+.lSSlideOuter img.go {
+	margin-#{$left}: 5px;
+}
+
+/*------------------- End Footer Links --------------------------------------*/

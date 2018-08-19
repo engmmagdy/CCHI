@@ -1,0 +1,16 @@
+.page-header {
+	h1 {
+		@include linearGradient(#92742c, #d1a74b);
+		color: #fff;
+		font-size: $fontsize;
+		margin: 10px 0;
+		border-#{$left}: 5px solid #d1a74b;
+		span {
+			background-image: url(../../images/int-page-header.png);
+			width: 100%;
+			display: block;
+			margin: 0;
+			padding: 15px
+		}
+	}
+}

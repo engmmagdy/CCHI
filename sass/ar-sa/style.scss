@@ -1,0 +1,33 @@
+/*----------Variable----------------*/
+
+@import 'sass/helpers/_variables';
+@import 'sass/helpers/_mixins';
+@import 'sass/helpers/_break-points';
+/*----------Functions----------------*/
+
+// Components 
+@import 'sass/component/_accordion';
+@import 'sass/component/_alerts';
+@import 'sass/component/_breadcrumb';
+@import 'sass/component/_main-menu';
+@import 'sass/component/_buttons';
+@import 'sass/component/_datatable';
+@import 'sass/component/_headers';
+@import 'sass/component/_icons';
+@import 'sass/component/_img-zoom';
+@import 'sass/component/_modal';
+@import 'sass/component/_preloader';
+@import 'sass/component/_tables';
+@import 'sass/component/_pages';
+@import 'sass/component/_spCustome';
+// layout
+@import 'sass/layout/_bootstrap';
+@import 'sass/layout/_footer';
+@import 'sass/layout/_header';
+@import 'sass/layout/_nav';
+@import 'sass/layout/_reset';
+// Pages
+@import 'sass/pages/_contact-us';
+@import 'sass/pages/_e-services';
+@import 'sass/pages/_homepage';
+@import 'sass/pages/_int-pages';

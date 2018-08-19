@@ -1,0 +1,259 @@
+
+.nav-bar {
+    margin: 0 auto;
+    display: inline-block;
+
+    @include breakpoint(isMobile) {
+        float: $left;
+        width: 100%;
+    }
+
+    @include breakpoint(isTablet) {
+        float: $left;
+        width: 100%;
+    }
+
+    .main-menu {
+
+        .navbar-header {
+            @include breakpoint(isMobile) {
+                float: $left;
+            }
+
+            @include breakpoint(isTablet) {
+                float: $left;
+            }
+        }
+
+        .navbar-collapse {
+            padding-#{$left}: 0;
+            padding-#{$right}: 0;
+        }
+
+        ul[id*=RootAspMenu] {
+
+            @include breakpoint(isMobile) {
+                background: #f5f5f5;
+            }
+
+            @include breakpoint(isTablet) {
+                background: #f5f5f5;
+            }
+
+            > li.static {
+                display: inline-block;
+                text-align: center;
+
+                @include breakpoint(isMobile) {
+                    display: block;
+                    width: 100%;
+                    border-bottom: 1px solid #ddd;
+                    padding: 10px;
+                }
+
+                @include breakpoint(isTablet) {
+                    display: block;
+                    width: 100%;
+                    border-bottom: 1px solid #ddd;
+                    padding: 10px;
+                }
+
+                &:last-child {
+                    a {
+                        padding-#{$left}: 0;
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 4px;
+                    background: #efa22c;
+                    transition: width .5s;
+                    margin-#{$left}: auto;
+                    margin-#{$right}: auto;
+                    margin-top: 15px;
+                    text-align: center;
+
+                    @include breakpoint(isMobile) {
+                        display: none;
+                    }
+
+                    @include breakpoint(isTablet) {
+                        display: none;
+                    }
+                }
+
+                &:hover {
+
+                    &::after {
+                        width: 100%;
+                    }
+
+                    ul.dynamic {
+                        display: block;
+                    }
+
+                    > a {
+                        color: #006fb6 !important;
+                        //border-bottom: 4px solid #efa22c;
+                    }
+                }
+
+                > a.selected {
+                    color: $firstcolor !important;
+                    border-bottom: 4px solid #cfb264;
+                }
+
+                a {
+                    color: #3c3c3c;
+                    margin-#{$left}: 0px !important;
+                    outline: 0;
+                    padding-#{$right}: 10px;
+                    padding-#{$left}: 10px;
+                    font-weight: bold;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    text-align: center;
+
+                    @include breakpoint(isLarge) {
+                        padding-#{$right}: 6px;
+                        padding-#{$left}: 6px;
+                        font-size: 0.78em;
+
+                        @if $right == left{
+                            font-size: 0.693em;
+                        }
+                    }
+
+                    @if $right == right {
+                        font-size: 0.99em;
+                    }
+
+                    @else {
+                        font-size: 0.95em;
+                    }
+
+                    span.additional-background {
+                        background-image: none;
+                        padding-#{$left}: 0;
+                    }
+                }
+
+                .action {
+                }
+            }
+
+        }
+    }
+
+    .navbar-toggle {
+        float: $left;
+        background-color: transparent;
+        border-radius: 0;
+        border-color: transparent;
+        margin-top: 10px;
+        min-width: 10px;
+        overflow: hidden;
+
+        .icon-bar {
+            @include transition();
+            position: relative;
+            background-color: #006fb6;
+
+            &:nth-child(2) {
+                -moz-transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+                top: 7px;
+            }
+
+            &:nth-child(3) {
+                opacity: 0;
+                visibility: hidden;
+                #{$left}: -90px;
+            }
+
+            &:nth-child(4) {
+                -moz-transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                top: -5px;
+            }
+        }
+
+        &.collapsed {
+            .icon-bar {
+                opacity: 1;
+                visibility: visible;
+                -moz-transform: rotate(0);
+                -webkit-transform: rotate(0);
+                -o-transform: rotate(0);
+                -ms-transform: rotate(0);
+                transform: rotate(0);
+                top: auto;
+                #{$left}: 0;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            background-color: transparent !important;
+        }
+    }
+
+    .navbar-collapse {
+        margin: 0;
+
+        &.in {
+            display: inline-block;
+            margin: 0;
+        }
+
+        width: 100%;
+        border: 0;
+    }
+
+    .navbar-right {
+        margin: 0;
+
+        @include breakpoint(isMobile) {
+            display: inline-block;
+            width: 100%;
+        }
+
+        @include breakpoint(isTablet) {
+            display: inline-block;
+            width: 100%;
+        }
+    }
+}
+
+
+.responsive-mode {
+
+    @include breakpoint(isMobile) {
+        position: absolute;
+        #{$left}: 0;
+        padding: 0 !important;
+        width: 100%;
+        z-index: 99;
+    }
+
+    @include breakpoint(isTablet) {
+        position: absolute;
+        #{$left}: 0;
+        padding: 0 !important;
+        width: 100%;
+        z-index: 99;
+    }
+
+    @include breakpoint(isLarge) {
+        text-align: $left;
+    }
+}

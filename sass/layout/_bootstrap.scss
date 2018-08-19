@@ -1,0 +1,53 @@
+.card {
+	border: 0;
+	.card-header {
+		background: $secondcolor;
+		padding: 0;
+		h3 {
+			background: url(../../images/menu-header.png);
+			margin: 0;
+			padding: 15px;
+			font-size: $fontsize - 2;
+			color: #fff
+		}
+	}
+	.card-body h5 {
+		font-size: $fontsize - 3;
+	}
+	a {
+		font-size: $fontsize - 4;
+		&:hover {
+			text-decoration: underline
+		}
+	}
+}
+
+.form-group {
+	label {
+		font-size: $fontsize - 3;
+		margin: 0
+	}
+	.form-control {
+		background: #fff
+	}
+	input,
+	select {
+		height: 40px !important
+	}
+	input:disabled {
+		background: #D7D7D7 !important
+	}
+	.select-item {
+		height: 40px !important
+	}
+	input[type=checkbox] {
+		height: auto
+	}
+}
+
+/*bootstrap*/
+
+.page-item,
+.page-link {
+	border-radius: 0 !important;
+}

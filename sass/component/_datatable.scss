@@ -1,0 +1,17 @@
+/* Scss Document */
+
+.dataTables_wrapper {
+	font-size: $fontsize - 4;
+}
+
+.page-item .page-link {
+	color: $firstcolor;
+	height: 36px;
+	font-size: $fontsize - 4
+}
+
+.page-item.active .page-link {
+	background: $secondcolor;
+	border-color: $secondcolor;
+	border: 0
+}

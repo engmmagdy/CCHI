@@ -1,0 +1,146 @@
+/*-------------- Start Vertical Menu ----------------*/
+
+.page-bg {
+	background-color: $intpagebg
+}
+
+.v-menu {
+	border: 1px solid #EFEFEF;
+	background-image: url(../../images/nav-bg.png);
+	margin: 10px 0;
+	background-color: #fff;
+	h4 {
+		background-color: $secondcolor;
+		color: #fff;
+		font-size: $fontsize - 2;
+		span {
+			background-image: url(../../images/menu-header.png);
+			width: 100%;
+			display: block;
+			margin: 0;
+			padding: 15px
+		}
+	}
+	li {
+		border-bottom: 1px solid #E5E5E5;
+		&:last-child {
+			border: 0
+		}
+		a {
+			color: $firstcolor !important;
+			&:hover {
+				background-color: $secondcolor;
+				color: #fff !important
+			}
+			.collapse {
+				color: #CD0003 !important
+			}
+		}
+		ul {
+			padding: 0 !important;
+			li {
+				padding: 0;
+				margin: 0;
+				text-indent: 15px;
+				a {
+					padding: 10px !important;
+					margin: 0
+				}
+			}
+		}
+	}
+}
+
+.page-content {
+	background: #fff;
+	padding: 10px;
+	border: 1px solid #EDEDED;
+	@include border-radius(4px);
+	margin: 10px 0;
+	display: table;
+	h1,
+	.card-title {
+		font-size: $fontsize - 1;
+		color: $firstcolor;
+	}
+	img {
+		margin: 15px auto;
+		display: block;
+	}
+	p {
+		font-size: $fontsize - 4;
+	}
+	.cchi-btn {
+		color: $secondcolor;
+		border: 1px solid $secondcolor;
+		background: #fff;
+		padding: 3px 6px;
+		&:hover {
+			background: $secondcolor;
+			color: #fff
+		}
+	}
+	ul,
+	ol {
+		font-size: $fontsize - 4;
+		line-height: 220%
+	}
+	.download-file {
+		padding: 0;
+		img {
+			width: 25px;
+			display: inline
+		}
+		span {
+			font-size: $fontsize - 3
+		}
+		a {
+			padding: 2px;
+			display: block;
+			width: 100%;
+			&:hover {
+				background: #F0F0F0
+			}
+		}
+	}
+	.p-content-footer {
+		font-size: $fontsize - 4;
+		color: #727272;
+		i {
+			color: $secondcolor
+		}
+	}
+}
+
+#links-slider,
+#links-slider-ar {
+	li {
+		text-align: center
+	}
+	a {
+		padding: 15px;
+		background: #fff;
+		display: block;
+		border: 0.5px solid $thirdcolor
+	}
+	h6 {
+		font-size: $fontsize - 4
+	}
+	img {
+		width: 50px;
+		margin-bottom: 15px
+	}
+}
+
+.lSSlideOuter .lSPager.lSpg {
+	bottom: 10px !important
+}
+
+.insurance-co {
+	img {
+		height: 80px;
+		width: 100%
+	}
+}
+
+/*-------------- End  Vertical  Menu ----------------*/
