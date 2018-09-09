@@ -1,8 +1,12 @@
+
+$font-family: 'GE Flow';
+
 /*----------Variable----------------*/
 
 @import 'sass/helpers/_variables';
 @import 'sass/helpers/_mixins';
 @import 'sass/helpers/_break-points';
+@import 'sass/helpers/_fonts';
 /*----------Functions----------------*/
 
 // Components 
@@ -31,3 +35,4 @@
 @import 'sass/pages/_e-services';
 @import 'sass/pages/_homepage';
 @import 'sass/pages/_int-pages';
+

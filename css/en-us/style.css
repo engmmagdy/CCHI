@@ -584,7 +584,7 @@ header .top-links li:first-child {
 /*------- End Reset---------*/
 /*------------- Start Header --------------*/
 header .top-links {
-  font-family: "GE Flow";
+  font-family: "Roboto";
   font-weight: 800;
 }
 
@@ -667,7 +667,7 @@ header .top-links li:first-child {
 }
 
 .slider2 ol li span {
-  font-family: "GE Flow";
+  font-family: "Roboto";
 }
 
 /*-------------------------- End Banner Slider ----------------------------*/
@@ -690,69 +690,6 @@ header .top-links li:first-child {
 /*------------------- End Footer Links --------------------------------------*/
 /*-------------------------- End Home Page ----------------------*/
 /*------------------start main navbar ----------------*/
-.navbar-toggler {
-  border: 0;
-}
-
-.navbar-toggler:focus {
-  outline: none;
-}
-
-.nav-bg {
-  background-color: #92732b;
-}
-
-/*Start Bootstrap*/
-.nav-item a {
-  color: #fff !important;
-  font-size: 11pt;
-}
-
-.nav-item a:hover {
-  color: #d1a74a !important;
-}
-
-.dropdown-divider {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.dropdown-menu {
-  border-radius: 0;
-  border: 0;
-  background: transparent;
-  margin-top: 2px;
-  width: auto;
-}
-
-@media (max-width: 991px) {
-  .dropdown-menu {
-    width: 100%;
-  }
-}
-
-.dropdown-menu a {
-  background: #92732b;
-  padding: 10px;
-}
-
-.dropdown-menu a:hover {
-  background: #d1a74a;
-  color: #92732b !important;
-}
-
-.dropdown-menu .dropdown-divider {
-  margin: 0;
-}
-
-.dropdown-toggle::after {
-  margin-top: 8px;
-  float: left;
-}
-
-.fa-mnu {
-  font-size: 19pt;
-}
-
 /*End Bootstrap*/
 /*-------- Start Search --------*/
 .search-nav {
@@ -888,7 +825,7 @@ a:focus {
 }
 
 .arfont {
-  font-family: "GE Flow";
+  font-family: "Roboto";
 }
 
 .full-width {

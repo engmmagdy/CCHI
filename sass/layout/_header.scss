@@ -3,7 +3,7 @@ header {
 	padding: 10px;
 	.top-links {
 		list-style-type: none;
-		font-family: $enfont;
+		font-family: $font-family;
 		width: auto;
 		font-weight: 600;
 		li {
@@ -37,7 +37,7 @@ header {
 .kyr-num {
 	margin-#{$right}: -30px !important;
 	background-color: $thirdcolor;
-	font-family: $enfont;
+	font-family: $font-family;
 	margin-#{$left}: 5px !important
 }
 

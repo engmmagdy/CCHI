@@ -1,6 +1,9 @@
-.nav-bar {
+.navbar  {
     margin: 0 auto;
     display: inline-block;
+    width: 100%;
+    background-color: $firstcolor;
+
     @include breakpoint(isMobile) {
         float: $left;
         width: 100%;
@@ -67,10 +70,11 @@
                     outline: 0;
                     padding-#{$right}: 10px;
                     padding-#{$left}: 10px;
-                    font-weight: bold;
+                    font-weight: 400;
+                    font-family: "GE Flow";
                     padding-top: 5px;
                     padding-bottom: 5px;
-                    text-align: center;
+                    text-align: $right;
                     @include breakpoint(isLarge) {
                         padding-#{$right}: 6px;
                         padding-#{$left}: 6px;
@@ -93,7 +97,7 @@
                 ul.dynamic {
                     right: 0;
                     left: initial !important;
-                    width: 100%;
+                    width: 280px !important;
                     min-width: 100%;
                     float: $right;
                     border: 0;
@@ -105,16 +109,18 @@
                     li {
                         display: block;
                         width: 100%;
-                        padding: 0.25rem 1.5rem;
+                        padding: 0.25rem 0;
                         clear: both;
                         font-weight: 400;
                         text-align: inherit;
-                        white-space: nowrap;
+                        // white-space: nowrap;
                         background-color: transparent;
                         border: 0;
                         a {
                             color: #fff;
                             font-size: 11pt;
+                            padding-left: 0;
+                            padding-right: 0;
                         }
                     }
                 }
@@ -179,7 +185,6 @@
             display: inline-block;
             margin: 0;
         }
-        width: 100%;
         border: 0;
     }
     .navbar-right {

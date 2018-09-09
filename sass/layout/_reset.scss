@@ -17,7 +17,7 @@
 body {
 	background-color: #fff;
 	font-size: $fontsize;
-	font-family: $enfont;
+	font-family: $font-family;
 }
 
 a {
@@ -37,7 +37,7 @@ a:focus {
 /*General Classes*/
 
 .enfont {
-	font-family: $enfont;
+	font-family: $font-family;
 }
 
 .arfont {
