@@ -1,49 +1,131 @@
 /*-------------- Start Vertical Menu ----------------*/
 
-.v-menu
-{
-	h4
-	{
+.v-menu {
+	h4 {
 		font-size: $fontsize - 1;
 	}
 }
 
-.page-content
-{
-	p
-	{
+.page-content {
+	p {
 		font-size: $fontsize - 2;
 	}
 }
+
+.news_box {
+	figure {
+		max-height: 250px;
+		height: 100%;
+		overflow: hidden;
+
+		img {
+			max-height: 100%;
+			height: auto;
+			width: 100%;
+			max-width: 100%;
+		}
+
+	}
+
+	>div[class^=col] {
+		margin-bottom: 30px;
+	}
+
+	.fas {
+		font-size: 0;
+
+		&:before {
+			font-size: 13px;
+		}
+
+	}
+}
+
+
+/* pager */
+.PagerContainerTable {
+	display: inline-block;
+	border-spacing: 5px;
+	border-collapse: collapse;
+	font-size: 16px;
+	font-family: 'GE Flow';
+	margin-top: 10px;
+	vertical-align: top;
+	float: $right;
+}
+
+.PagerOtherPageCells,
+.PagerInfoCell,
+.ms-paging {
+	color: #404040;
+	background: #d1a74b;
+	padding: 6px 10px;
+	background-color: rgba(252, 252, 252, 0.8);
+	border: 1px solid #dcdcdc;
+}
+
+.PagerOtherPageCells a {
+	color: #404040 !important;
+	text-decoration: none
+}
+
+.PagerCurrentPageCell {
+	background: #d1a74b;
+	color: #fff;
+	padding: 0 10px;
+	border: 1px solid #d1a74a;
+}
+
+.PagerCurrentPageCell span strong {
+	font-weight: normal;
+	line-height: 10px
+}
+
+.PagerContainerTable a:hover {
+	text-decoration: underline
+}
+
+
 /*-------------- End  Vertical  Menu ----------------*/
 
-.breadcrumb
-{
+.breadcrumb {
 	font-size: $fontsize - 3;
-		.breadcrumb-item
-		{
-			a
-			{
-				margin-#{$left}:0;
-				margin-#{$right}: 15px
-			}
-			span{margin-#{$right}: 15px}
-			
+
+	>span {
+		a {
+			margin-#{$left}: 0;
+			// margin-#{$right}: 15px
 		}
+
+		span {
+			margin-#{$right}: 15px
+		}
+
+	}
+}
+
+.socialBar {
+	display: none;
 }
 
 
 
 
-.page-header
-{
-	h1
-	{
+.page-header {
+	h1 {
 		@include linearGradient(#d1a74b, #92742c);
 		font-size: $fontsize;
 		border-#{$right}: 5px solid #d1a74b;
 		border-#{$left}: 0;
-		
+
 	}
 }
 
+.news_details_box {
+	.n_desc {
+		* {
+			font-family: 'GE Flow' !important;
+			font-size: 1rem !important;
+		}
+	}
+}

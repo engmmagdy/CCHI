@@ -8,7 +8,7 @@
 
 .modal-content {
     background: transparent;
-    @include box-shadow( 0 0 0 0);
+    @include box-shadow(0 0 0 0);
     border: 0;
 }
 
@@ -25,6 +25,7 @@
     margin: -1rem -1rem -1rem auto;
     font-size: $fontsize + 20;
     color: #fff;
+
     &:focus {
         outline: none
     }
@@ -34,13 +35,16 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+
     li {
         line-height: 250%;
+
         a {
             padding: 10px;
             display: block;
             margin: 1px 0;
             color: #412e06;
+
             &:hover {
                 background: #ac986b;
                 color: #fff
@@ -56,9 +60,14 @@
     font-size: 150%;
     text-align: center;
     color: #fff;
+
     &:hover {
         background: #9E8E6D;
     }
+}
+
+.modal-backdrop.show {
+    z-index: -1;
 }
 
 /*--------------------End   Modal--------------------*/

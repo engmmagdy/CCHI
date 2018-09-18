@@ -1,5 +1,7 @@
 
 $font-family: 'GE Flow';
+$font-family2: 'Roboto';
+
 
 /*----------Variable----------------*/
 
@@ -14,6 +16,7 @@ $font-family: 'GE Flow';
 @import 'sass/component/_alerts';
 @import 'sass/component/_breadcrumb';
 @import 'sass/component/_main-menu';
+@import 'sass/component/_sideNav';
 @import 'sass/component/_buttons';
 @import 'sass/component/_datatable';
 @import 'sass/component/_headers';

@@ -1,0 +1,77 @@
+.v-menu {
+    min-width: 25%;
+    padding-#{$left}: 30px;
+    margin-#{$right}: 0;
+    background-image: url(../images/nav-bg.png);
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+    .v-menu {
+        position: fixed;
+        top: 0;
+        #{$left}: 0;
+        width: 100%;
+        background: #fff;
+        height: 100%;
+        padding: 110px 35px 30px 35px;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 10;
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0);
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+}
+
+@media (min-width: 1025px) {
+    .v-menu {
+        padding-#{$left}: 0;
+        min-width: 25%;
+    }
+}
+
+.v-menu .global-menu__close {
+    display: none;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+    .v-menu .global-menu__close {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        #{$right}: auto;
+        #{$left}: 0;
+    }
+}
+
+.v-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.v-menu li {
+    list-style: none;
+}
+
+.v-menu .ms-core-listMenu-verticalBox a.static {
+    color: #868686;
+    padding: 0.5rem 1rem; //border-bottom: 1px solid #d8d2c4;
+    font-size: 11pt;
+    font-weight: 700;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    background: none;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.v-menu .ms-core-listMenu-verticalBox a.static:hover,
+.v-menu .ms-core-listMenu-verticalBox a.selected {
+    background-color: $secondcolor !important;
+    color: #fff !important
+}

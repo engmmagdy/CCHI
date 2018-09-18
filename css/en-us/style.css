@@ -53,16 +53,15 @@
   margin: 10px 0;
 }
 
-.breadcrumb .breadcrumb-item a {
-  margin: 0 5px;
+.breadcrumb a {
   color: #d1a74a;
 }
 
-.breadcrumb .breadcrumb-item a:hover {
+.breadcrumb a:hover {
   color: #92732b;
 }
 
-.breadcrumb .breadcrumb-item span {
+.breadcrumb > span {
   color: #92732b;
   margin: 0 5px;
 }
@@ -348,6 +347,10 @@
   background: #9E8E6D;
 }
 
+.modal-backdrop.show {
+  z-index: -1;
+}
+
 /*--------------------End   Modal--------------------*/
 @media screen and (min-width: 1600px) {
   .container {
@@ -365,18 +368,89 @@
   font-size: 12pt;
 }
 
+.news_box figure {
+  max-height: 250px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.news_box figure img {
+  max-height: 100%;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.news_box > div[class^=col] {
+  margin-bottom: 30px;
+}
+
+.news_box .fas {
+  font-size: 0;
+}
+
+.news_box .fas:before {
+  font-size: 13px;
+}
+
+/* pager */
+.PagerContainerTable {
+  display: inline-block;
+  border-spacing: 5px;
+  border-collapse: collapse;
+  font-size: 16px;
+  font-family: 'GE Flow';
+  margin-top: 10px;
+  vertical-align: top;
+  float: left;
+}
+
+.PagerOtherPageCells,
+.PagerInfoCell,
+.ms-paging {
+  color: #404040;
+  background: #d1a74b;
+  padding: 6px 10px;
+  background-color: rgba(252, 252, 252, 0.8);
+  border: 1px solid #dcdcdc;
+}
+
+.PagerOtherPageCells a {
+  color: #404040 !important;
+  text-decoration: none;
+}
+
+.PagerCurrentPageCell {
+  background: #d1a74b;
+  color: #fff;
+  padding: 0 10px;
+  border: 1px solid #d1a74a;
+}
+
+.PagerCurrentPageCell span strong {
+  font-weight: normal;
+  line-height: 10px;
+}
+
+.PagerContainerTable a:hover {
+  text-decoration: underline;
+}
+
 /*-------------- End  Vertical  Menu ----------------*/
 .breadcrumb {
   font-size: 11pt;
 }
 
-.breadcrumb .breadcrumb-item a {
+.breadcrumb > span a {
   margin-right: 0;
+}
+
+.breadcrumb > span span {
   margin-left: 15px;
 }
 
-.breadcrumb .breadcrumb-item span {
-  margin-left: 15px;
+.socialBar {
+  display: none;
 }
 
 .page-header h1 {
@@ -387,6 +461,11 @@
   font-size: 14pt;
   border-left: 5px solid #d1a74b;
   border-right: 0;
+}
+
+.news_details_box .n_desc * {
+  font-family: 'GE Flow' !important;
+  font-size: 1rem !important;
 }
 
 .card {
@@ -498,7 +577,6 @@ footer .footer-links ul li {
 .shortlinks h2 {
   font-size: 11pt;
   color: #92732b;
-  margin: 1px;
   text-align: right;
 }
 
@@ -684,7 +762,7 @@ header .top-links li:first-child {
 }
 
 .shortlinks img {
-  float: right;
+  float: left;
 }
 
 /*------------------- End Footer Links --------------------------------------*/
@@ -879,13 +957,23 @@ a:focus {
   border: 1px solid #e9e7de;
   text-align: center;
   padding: 30px 15px;
-  font-size: 11pt;
+  font-size: 12pt;
   display: block;
+  color: #92732b;
+  margin-bottom: 30px;
 }
 
 .e-services a:hover {
   background: #FBFBFB;
   border: 1px solid #d1a74a;
+}
+
+.e-services a img {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 15px;
 }
 
 /*-------------------------- Start Banner Slider ---------------------------*/
@@ -942,7 +1030,7 @@ a:focus {
   padding-right: 20px;
   padding-left: 0;
   font-size: 11pt;
-  line-height: 150%;
+  line-height: 150% !important;
   text-align: left;
 }
 
@@ -956,7 +1044,7 @@ a:focus {
   padding-right: 10px;
   font-size: 11pt;
   font-family: "Roboto";
-  line-height: 150%;
+  line-height: 150% !important;
   text-align: left;
 }
 
@@ -1192,9 +1280,11 @@ a:focus {
   background: rgba(0, 0, 0, 0.6);
   color: #eeeeee;
   font-size: 17px;
-  bottom: 0;
+  bottom: 0 !important;
   width: 100%;
-  padding: 15px;
+  padding: 15px 15px 35px;
+  right: 0;
+  line-height: 1.5;
 }
 
 /*-------------------------- End CCHI News   ------------------------------*/
@@ -1344,10 +1434,10 @@ a:focus {
 }
 
 .v-menu {
-  border: 1px solid #EFEFEF;
   background-image: url(../../images/nav-bg.png);
-  margin: 10px 0;
-  background-color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0 !important;
 }
 
 .v-menu h4 {
@@ -1364,40 +1454,52 @@ a:focus {
   padding: 15px;
 }
 
-.v-menu li {
+.v-menu ul {
+  border: 1px solid #EFEFEF;
+  background: #fff url(../../images/nav-bg.png);
+}
+
+.v-menu ul li {
   border-bottom: 1px solid #E5E5E5;
 }
 
-.v-menu li:last-child {
+.v-menu ul li:last-child {
   border: 0;
 }
 
-.v-menu li a {
+.v-menu ul li a {
   color: #92732b !important;
 }
 
-.v-menu li a:hover {
-  background-color: #d1a74a;
-  color: #fff !important;
-}
-
-.v-menu li a .collapse {
+.v-menu ul li a .collapse {
   color: #CD0003 !important;
 }
 
-.v-menu li ul {
+.v-menu ul li ul {
   padding: 0 !important;
 }
 
-.v-menu li ul li {
+.v-menu ul li ul li {
   padding: 0;
   margin: 0;
   text-indent: 15px;
 }
 
-.v-menu li ul li a {
+.v-menu ul li ul li a {
   padding: 10px !important;
   margin: 0;
+}
+
+.container-fluid.p-0.mt-5.mb-5 .ms-webpart-zone {
+  display: inline-block;
+}
+
+.container-fluid.p-0.mt-5.mb-5 .ms-webpart-zone .ms-webpart-cell-vertical {
+  display: inline-block;
+}
+
+.container-fluid.p-0.mt-5.mb-5 .ms-webpart-zone .ms-webpart-cell-vertical .ms-webpart-chrome-vertical {
+  display: inline-block;
 }
 
 .page-content {
@@ -1406,7 +1508,7 @@ a:focus {
   border: 1px solid #EDEDED;
   border-radius: 4px;
   margin: 10px 0;
-  display: table;
+  width: 100%;
 }
 
 .page-content h1,
@@ -1416,12 +1518,11 @@ a:focus {
 }
 
 .page-content img {
-  margin: 15px auto;
-  display: block;
+  display: inline-block;
 }
 
 .page-content p {
-  font-size: 10pt;
+  font-size: 12pt;
 }
 
 .page-content .cchi-btn {
@@ -1438,7 +1539,7 @@ a:focus {
 
 .page-content ul,
 .page-content ol {
-  font-size: 10pt;
+  font-size: 12pt;
   line-height: 220%;
 }
 
@@ -1474,26 +1575,26 @@ a:focus {
   color: #d1a74a;
 }
 
-#links-slider li,
-#links-slider-ar li {
+.links-slider li,
+.links-slider-ar li {
   text-align: center;
 }
 
-#links-slider a,
-#links-slider-ar a {
+.links-slider a,
+.links-slider-ar a {
   padding: 15px;
   background: #fff;
   display: block;
   border: 0.5px solid #e9e7de;
 }
 
-#links-slider h6,
-#links-slider-ar h6 {
+.links-slider h6,
+.links-slider-ar h6 {
   font-size: 10pt;
 }
 
-#links-slider img,
-#links-slider-ar img {
+.links-slider img,
+.links-slider-ar img {
   width: 50px;
   margin-bottom: 15px;
 }

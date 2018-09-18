@@ -1,21 +1,20 @@
 /* Scss Document */
 
-.breadcrumb
-{
+.breadcrumb {
 	background-color: $shortlinksbg;
 	font-size: $fontsize - 3;
 	margin: 10px 0;
-		.breadcrumb-item
-		{
-			a
-			{
-				margin: 0 5px;
-				color: $secondcolor;
-				&:hover
-				{
-					color: $firstcolor;
-				}
-			}
-			span{color: $firstcolor;margin: 0 5px}
+
+	a {
+		color: #d1a74a;
+
+		&:hover {
+			color: $firstcolor;
 		}
+	}
+
+	>span {
+		color: $firstcolor;
+		margin: 0 5px
+	}
 }

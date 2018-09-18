@@ -3,11 +3,21 @@
 		border: 1px solid $thirdcolor;
 		text-align: center;
 		padding: 30px 15px;
-		font-size: $fontsize - 3;
+		font-size: $fontsize - 2;
 		display: block;
+		color: #92732b;
+		margin-bottom: 30px;
 		&:hover {
 			background: #FBFBFB;
 			border: 1px solid $secondcolor;
+		}
+
+		img{
+			display: block;
+			margin: 0 auto;
+			width: auto;
+			max-width: 100%;
+			margin-bottom: 15px;
 		}
 	}
 }
