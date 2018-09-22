@@ -443,7 +443,6 @@
   min-width: 25%;
   padding-left: 30px;
   margin-right: 0;
-  background-image: url(../images/nav-bg.png);
 }
 
 @media (min-width: 0) and (max-width: 767px) {
@@ -712,6 +711,108 @@
   content: "\e904";
 }
 
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
 /* Scss Document */
 .img-zoom {
   position: relative;
@@ -941,6 +1042,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.dfwp-column {
+  margin: 0;
 }
 
 @media (min-width: 1200px) {
@@ -2017,79 +2122,88 @@ a:focus {
 }
 
 .container-fluid.p-0.mt-5.mb-5 .ms-webpart-zone .ms-webpart-cell-vertical .ms-webpart-chrome-vertical {
-  display: inline-block;
+  display: inline;
 }
 
-.page-content {
+.page-container {
   background: #fff;
   padding: 10px;
   border: 1px solid #EDEDED;
   border-radius: 4px;
   margin: 10px 0;
+  display: inline-;
   width: 100%;
+  overflow: hidden;
 }
 
-.page-content h1,
-.page-content .card-title {
-  font-size: 13pt;
+.page-container h1,
+.page-container .card-title {
+  font-size: 1.5rem;
   color: #92732b;
 }
 
-.page-content img {
+.page-container img {
   display: inline-block;
 }
 
-.page-content p {
+.page-container p {
   font-size: 12pt;
 }
 
-.page-content .cchi-btn {
+.page-container .cchi-btn {
   color: #d1a74a;
   border: 1px solid #d1a74a;
   background: #fff;
   padding: 3px 6px;
 }
 
-.page-content .cchi-btn:hover {
+.page-container .cchi-btn:hover {
   background: #d1a74a;
   color: #fff;
 }
 
-.page-content ul,
-.page-content ol {
+.page-container ul,
+.page-container ol {
   font-size: 12pt;
   line-height: 220%;
 }
 
-.page-content .download-file {
+.page-container .download-file {
   padding: 0;
 }
 
-.page-content .download-file img {
+.page-container .download-file img {
   width: 25px;
   display: inline;
+  margin-left: 10px;
 }
 
-.page-content .download-file span {
+.page-container .download-file span {
   font-size: 11pt;
 }
 
-.page-content .download-file a {
-  padding: 2px;
+.page-container .download-file a {
+  padding: 5px;
   display: block;
   width: 100%;
+  border-bottom: 1px dashed #d1d1d1;
 }
 
-.page-content .download-file a:hover {
+.page-container .download-file a:hover {
   background: #F0F0F0;
 }
 
-.page-content .p-content-footer {
+.page-container .download-file .download-icon {
+  float: left;
+  margin-top: 5px;
+}
+
+.page-container .p-content-footer {
   font-size: 10pt;
   color: #727272;
 }
 
-.page-content .p-content-footer i {
+.page-container .p-content-footer i {
   color: #d1a74a;
 }
 
@@ -2104,6 +2218,7 @@ a:focus {
   background: #fff;
   display: block;
   border: 0.5px solid #e9e7de;
+  text-align: center;
 }
 
 .links-slider h6,
@@ -2121,8 +2236,22 @@ a:focus {
   bottom: 10px !important;
 }
 
+.container-fluid.p-0.mt-5.mb-5 .lSSlideOuter .lSPager.lSpg {
+  bottom: -30px !important;
+}
+
 .insurance-co img {
   height: 80px;
+  width: 100%;
+}
+
+#lightgallery span {
+  margin-top: 20px;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+#lightgallery img {
   width: 100%;
 }
 

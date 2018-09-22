@@ -18,6 +18,10 @@ body {
     display: flex;
 }
 
+.dfwp-column {
+    margin: 0;
+}
+
 @media (min-width: 1200px) {
     .container {
         max-width: 1340px;

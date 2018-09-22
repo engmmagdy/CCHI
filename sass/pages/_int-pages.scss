@@ -28,6 +28,7 @@
 	ul {
 		border: 1px solid #EFEFEF;
 		background: #fff url(../../images/nav-bg.png);
+
 		li {
 			border-bottom: 1px solid #E5E5E5;
 
@@ -67,32 +68,33 @@
 
 }
 
-.container-fluid.p-0.mt-5.mb-5{
-	.ms-webpart-zone{
+.container-fluid.p-0.mt-5.mb-5 {
+	.ms-webpart-zone {
 		display: inline-block;
-		
-		.ms-webpart-cell-vertical{
+
+		.ms-webpart-cell-vertical {
 			display: inline-block;
 
-			.ms-webpart-chrome-vertical{
-				display: inline-block;
+			.ms-webpart-chrome-vertical {
+				display: inline;
 			}
 		}
 	}
 }
 
-.page-content {
+.page-container {
 	background: #fff;
 	padding: 10px;
 	border: 1px solid #EDEDED;
 	@include border-radius(4px);
 	margin: 10px 0;
-	// display: table;
+	display: inline-;
 	width: 100%;
+	overflow: hidden;
 
 	h1,
 	.card-title {
-		font-size: $fontsize - 1;
+		font-size: 1.5rem;
 		color: $firstcolor;
 	}
 
@@ -128,7 +130,8 @@
 
 		img {
 			width: 25px;
-			display: inline
+			display: inline;
+			margin-#{$left}: 10px;
 		}
 
 		span {
@@ -136,13 +139,19 @@
 		}
 
 		a {
-			padding: 2px;
+			padding: 5px;
 			display: block;
 			width: 100%;
+			border-bottom: 1px dashed #d1d1d1;
 
 			&:hover {
 				background: #F0F0F0
 			}
+		}
+
+		.download-icon {
+			float: $left;
+			margin-top: 5px;
 		}
 	}
 
@@ -165,8 +174,9 @@
 	a {
 		padding: 15px;
 		background: #fff;
-		display: block; 
-		border: 0.5px solid $thirdcolor
+		display: block;
+		border: 0.5px solid $thirdcolor;
+		text-align: center;
 	}
 
 	h6 {
@@ -183,11 +193,30 @@
 	bottom: 10px !important
 }
 
+.container-fluid.p-0.mt-5.mb-5 {
+	.lSSlideOuter .lSPager.lSpg {
+		bottom: -30px !important
+	}
+}
+
 .insurance-co {
 	img {
 		height: 80px;
 		width: 100%
 	}
 }
+
+#lightgallery {
+	span {
+		margin-top: 20px;
+		display: inline-block;
+		line-height: 1.5;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
 
 /*-------------- End  Vertical  Menu ----------------*/
